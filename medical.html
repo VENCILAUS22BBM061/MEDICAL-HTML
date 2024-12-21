@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(logo.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        header {
+            font-family: Arial, sans-serif;
+            background-color:lightskyblue;
+            color:black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #10c1d8;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VLB MEDICAL SHOP</h1>
+        <p>Your health, our priority!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>"Your trusted partner in healthcare, providing quality medicines and medical supplies for your well-being."</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Medicines</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="dolo 500mg.jpg" alt="Paracetamol">
+                <h3>[Paracetamol dolo-500]</h3>
+                <p>10.00</p>
+            </div>
+            <div class="product-card">
+                <img src="ibuprofen.jpg" alt="Ibuprofen">
+                <h3>[Ibuprofen]</h3>
+                <p>15.00</p>
+            </div>
+            <div class="product-card">
+                <img src="cetrizine.jpg" alt="Cetirizine">
+                <h3>[Cetirizine]</h3>
+                <p>20.00</p>
+            </div>
+            <div class="product-card">
+                <img src="aspirin.jpg" alt="Aspirin">
+                <h3>[Aspirin]</h3>
+                <p>25.00</p>
+            </div>
+            <div class="product-card">
+                <img src="Azithromycin.jpg" alt="Azithromycin">
+                <h3>[Azithromycin 500mg]</h3>
+                <p>30.00</p>
+            </div>
+            <div class="product-card">
+                <img src="Amoxicillin.jpg" alt="Amoxicillin 500mg">
+                <h3>[Amoxicillin 500mg]</h3>
+                <p>35.00</p>
+            </div>
+            <div class="product-card">
+                <img src="Metformin.jpg" alt="Metformin 500mg">
+                <h3>[Metformin 500mg]</h3>
+                <p>40.00</p>
+            </div>
+            <div class="product-card">
+                <img src="Omeprazole.jpg" alt="Omeprazole 20mg">
+                <h3>[Omeprazole 20mg]</h3>
+                <p>45.00</p>
+            </div>
+            <div class="product-card">
+                <img src="Losartan.jpg" alt="Losartan 50mg">
+                <h3>[Losartan 50mg]</h3>
+                <p>50.00</p>
+            </div>
+            <div class="product-card">
+                <img src="Prednisone.jpg" alt="Prednisone 20mg">
+                <h3>[Prednisone 20mg]</h3>
+                <p>55.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to us!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 [VLB MEDICAL SHOP]. All Rights Reserved.</p>
+        <p>Follow us on:
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
